@@ -6,10 +6,12 @@ function RootLayout() {
   return (
     <div className='rootLayout'>
       <header className='App-head'>
-        <nav>
-          <h1>Mauristo Router</h1>
-          <NavLink to="/">Home</NavLink><br />
-          <NavLink to="about">About</NavLink>
+        <h1>Mauristo Router</h1>
+        <nav className='nav'>
+
+          <NavLink to="/" className="nav-link">Home</NavLink>
+          <NavLink to="about" className="nav-link">About</NavLink>
+          <NavLink to="help" className="nav-link">Help</NavLink>
         </nav>
       </header>
 

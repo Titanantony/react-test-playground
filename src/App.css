@@ -1,3 +1,7 @@
+* {
+  background-color: #282c34;
+}
+
 .App {
   text-align: center;
 }
@@ -48,4 +52,56 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Navigation.css */
+
+.nav {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  background: #282c34;
+  /* Dark background for contrast */
+  border-bottom: 2px solid #61dafb;
+  /* Accent color border */
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #61dafb;
+  /* Accent color */
+  font-size: 1.2em;
+  margin: 0 15px;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 2px;
+  width: 0;
+  background: #61dafb;
+  /* Accent color underline */
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::before,
+.nav-link.active::before {
+  width: 100%;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+  /* Change color on hover */
+  transform: scale(1.1);
+  /* Slightly increase the size on hover */
+}
+
+.nav-link.active {
+  font-weight: bold;
+  /* Emphasize active link */
 }
