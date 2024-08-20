@@ -1,4 +1,9 @@
-import { BrowserRouter, Routes, Route, Link, NavLink } from 'react-router-dom';
+import {
+  createBrowserRouter,
+  Route,
+  createRoutesFromElements,
+  RouterProvider,
+} from 'react-router-dom';
 import './App.css';
 
 //pages
@@ -6,26 +11,27 @@ import './App.css';
 import Home from './pages/Home';
 import About from './pages/About';
 
+//Layout
+import RootLayout from './layouts/RootLayout';
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path='/' element={<RootLayout />}>
+      <Route index element={<Home />} />
+      <Route path="about" element={<About />} />
+      <Route path="help">
+        <Route path="faq"/>
+        <Route path="contact"/>
+      </Route>
+    </Route>
+  )
+)
 
 function App() {
   return (
-   <BrowserRouter>
-    <header>
-      <h1>Mauristo Router</h1>
-      <Link to="/">Home</Link>
-      <NavLink to="about">About</NavLink>
 
-    </header>
-    <main>
-      <Routes>
-        <Route index element={<Home />}/>
-        <Route path="about" element={<About />}/>
-        {/* <Route path="" element={<Home />}/> */}
-        
-        <Route/>
-      </Routes>
-    </main>
-   </BrowserRouter>
+
+    <RouterProvider router={router} />
   );
 }
 
