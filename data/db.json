@@ -1,31 +1,31 @@
 {
   "careers": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Data Scientist",
       "salary": 90000,
       "location": "San Francisco, CA"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Frontend Developer",
       "salary": 70000,
       "location": "Berlin, Germany"
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "AI Researcher",
       "salary": 120000,
       "location": "Tokyo, Japan"
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "Cybersecurity Analyst",
       "salary": 85000,
       "location": "New York, NY"
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "Mobile App Developer",
       "salary": 65000,
       "location": "Nairobi, Kenya"
