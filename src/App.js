@@ -6,6 +6,14 @@ import {
 } from 'react-router-dom';
 import './App.css';
 
+
+
+//Layout
+import RootLayout from './layouts/RootLayout';
+import HelpLayout from './layouts/HelpLayout';
+import CareersLayout from './layouts/CareersLayout';
+
+
 //pages
 
 import Home from './pages/Home';
@@ -13,11 +21,7 @@ import About from './pages/About';
 import FAQ from './pages/help/Faq';
 import Contact from './pages/help/Contact';
 import NotFound from './NotFound';
-
-//Layout
-import RootLayout from './layouts/RootLayout';
-import HelpLayout from './layouts/HelpLayout';
-
+import Careers, { careersLoader } from './pages/Careers/Careers';
 
 
 const router = createBrowserRouter(
@@ -28,6 +32,13 @@ const router = createBrowserRouter(
       <Route path="help" element={<HelpLayout />}>
         <Route path="faq" element={<FAQ />}/>
         <Route path="contact" element={<Contact/>} />
+      </Route>
+      <Route path='careers' element={<CareersLayout />}>
+        <Route 
+        index 
+        element={<Careers />}
+        loader={careersLoader} 
+        />
       </Route>
 
       <Route path="*" element={<NotFound />}/>

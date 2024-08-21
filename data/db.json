@@ -1,0 +1,46 @@
+{
+  "careers": [
+    {
+      "id": 1,
+      "title": "Data Scientist",
+      "salary": 90000,
+      "location": "San Francisco, CA"
+    },
+    {
+      "id": 2,
+      "title": "Frontend Developer",
+      "salary": 70000,
+      "location": "Berlin, Germany"
+    },
+    {
+      "id": 3,
+      "title": "AI Researcher",
+      "salary": 120000,
+      "location": "Tokyo, Japan"
+    },
+    {
+      "id": 4,
+      "title": "Cybersecurity Analyst",
+      "salary": 85000,
+      "location": "New York, NY"
+    },
+    {
+      "id": 5,
+      "title": "Mobile App Developer",
+      "salary": 65000,
+      "location": "Nairobi, Kenya"
+    },
+    {
+      "id": 6,
+      "title": "Game Designer",
+      "salary": 60000,
+      "location": "Los Angeles, CA"
+    },
+    {
+      "id": 7,
+      "title": "Blockchain Developer",
+      "salary": 110000,
+      "location": "Zurich, Switzerland"
+    }
+  ]
+}
